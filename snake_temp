@@ -1,0 +1,72 @@
+# Coder: wongpakwing
+# Date: 14/3/2022
+# Project: Snake Game
+
+import turtle as t
+
+t.bgcolor('white')
+
+# Create the snake object
+cater = t.Turtle()
+cater.shape('square')
+cater.color('red')
+cater.speed(0.1)
+cater.penup()
+
+while True:
+  cater.forward(1)
+
+# Create the leaf object
+leaf = t.Turtle()
+leaf.shape = ((0,0),(14,2),(18,6),(20,20),(6,18),(2,14))
+t.register_shape('leaf',leaf_shape)
+leaf.shape('leaf')
+leaf.color('green')
+leaf.speed(0)
+
+leaf.setx(0)
+leaf.sety(0)
+leaf.showturtle()
+
+# Create a text object
+text = t.turtle()
+text.write('Press SPACE to start',align='center',font=('Arial', 16, 'bold')
+          )
+
+# Create a score object
+
+score_turtle = t.turtle()
+score_turtle.hideturtle()
+
+# This function will determine whether the snake is off the bounding window?
+def outside_window():
+  pass
+
+# This function will be ececuted when the game is over
+def game_over():
+  pass
+
+# This function will update the score turtle on the screen
+def display_score():
+  pass
+
+# This function will randomly place a leaf on the screen
+def place_leaf():
+  pass
+
+# The following 4 function s will control the movement of the snake
+def move_up():
+  pass
+
+def move_down():
+  pass
+
+def move_left():
+  pass
+
+def move_right():
+  pass
+
+# The following function will be ececuted when the game is ready to start
+def start_game():
+  pass
